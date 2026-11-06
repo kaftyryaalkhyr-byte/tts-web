@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محول النص إلى كلام | Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ محول النص إلى كلام</h1>
+        <p class="subtitle">اختر الصوت واللغة، اكتب النص، ثم استمع</p>
 
+        <div class="control-group">
+            <label for="voiceSelect">الصوت / اللغة:</label>
+            <select id="voiceSelect"></select>
+        </div>
+
+        <div class="control-group">
+            <label for="rate">السرعة: <span id="rateValue">1</span></label>
+            <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="control-group">
+            <label for="pitch">النبرة: <span id="pitchValue">1</span></label>
+            <input type="range" id="pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <textarea id="textInput" placeholder="اكتب أو الصق النص هنا..." rows="6"></textarea>
+
+        <div class="button-group">
+            <button id="speakBtn" class="primary">🔊 تحدث</button>
+            <button id="pauseBtn">⏸️ إيقاف مؤقت</button>
+            <button id="resumeBtn">▶️ استئناف</button>
+            <button id="cancelBtn" class="danger">⏹️ إلغاء</button>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
