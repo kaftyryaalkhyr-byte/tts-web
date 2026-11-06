@@ -1,0 +1,18 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+body { background: #0f172a; color: #e2e8f0; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+.container { background: #1e293b; padding: 30px; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); width: 100%; max-width: 600px; }
+h1 { text-align: center; margin-bottom: 8px; font-size: 1.8rem; }
+.subtitle { text-align: center; color: #94a3b8; margin-bottom: 24px; font-size: 0.9rem; }
+.control-group { margin-bottom: 18px; }
+label { display: block; margin-bottom: 6px; font-weight: 600; color: #cbd5e1; }
+select, textarea, input[type="range"] { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #e2e8f0; font-size: 1rem; }
+textarea { resize: vertical; line-height: 1.6; }
+input[type="range"] { padding: 0; height: 6px; accent-color: #3b82f6; }
+.button-group { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+button { flex: 1; min-width: 100px; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-size: 0.95rem; font-weight: 600; background: #334155; color: #e2e8f0; transition: background 0.2s; }
+button:hover { background: #475569; }
+button.primary { background: #3b82f6; color: white; }
+button.primary:hover { background: #2563eb; }
+button.danger { background: #ef4444; color: white; }
+button.danger:hover { background: #dc2626; }
+.status { text-align: center; margin-top: 10px; font-size: 0.9rem; color: #94a3b8; min-height: 20px; }
